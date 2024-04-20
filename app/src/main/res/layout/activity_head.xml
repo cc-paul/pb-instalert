@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Head">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="#191645" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize">
+
+                <LinearLayout
+                    android:id="@+id/lnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icn_back" />
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/man_bold"
+                            android:gravity="center"
+                            android:text="Title"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#F3F5F9"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lnHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Description" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="The upper part of the human body, or the front or
+upper part of the body of an animal, typically separated from
+the rest of the body by a neck, and containing the brain, mouth,
+and sense organs" />
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Reference : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:tag="https://www.mayoclinic.org/first-aid/first-aid-head-trauma/basics/art-20056626"
+                                android:onClick="getLink"
+                                android:fontFamily="@font/man_bold"
+                                android:text="Mayo Clinic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Possible Injuries" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Head Injury" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Head Trauma or Bleeding" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Administer the following first-aid steps while waiting for
+emergency medical help to arrive" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="● Keep the person still. The injured person should lie down
+with the head and shoulders slightly elevated. Don't move
+the person unless necessary, and avoid moving the person's
+neck. If the person is wearing a helmet, don't remove it. \n\n
+● Stop any bleeding. Apply firm pressure to the wound with
+sterile gauze or a clean cloth. But don't apply direct
+pressure to the wound if you suspect a skull fracture.\n\n
+● Watch for changes in breathing and alertness. If the person
+shows no signs of circulation — no breathing, coughing or
+movement — begin CPR.
+" />
+
+                        <VideoView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/vdHead1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"/>
+
+
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Video from : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:onClick="openYoutube"
+                                android:fontFamily="@font/man_bold"
+                                android:text="SAFESTEPS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnArm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Description" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="A human upper limb. especially : the part between
+the shoulder and the wrist" />
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Reference : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:tag="https://www.mayoclinic.org/first-aid/first-aid-fractures/basics/art-20056641"
+                                android:onClick="getLink"
+                                android:fontFamily="@font/man_bold"
+                                android:text="Mayo Clinic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Possible Injuries" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Fractured Arm (Broken Bones)" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Wounded Arm" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Administer the following first-aid steps while waiting for
+emergency medical help to arrive" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="● Stop any bleeding. Apply pressure to the wound with a
+sterile bandage, a clean cloth or a clean piece of
+clothing. \n\n● Immobilize the injured area. Don't try to realign the bone
+or push a bone that's sticking out back in., apply a splint
+to the area above and below the fracture sites. Padding the
+splints can help reduce discomfort.
+\n\n● Apply ice packs to limit swelling and help relieve pain.
+Don't apply ice directly to the skin. Wrap the ice in a
+towel, piece of cloth or some other material.
+\n\n● Treat for shock. If the person feels faint or is breathing
+in short, rapid breaths, lay the person down with the head
+slightly lower than the trunk and, if possible, elevate the
+legs." />
+
+                        <VideoView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/vdArm1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"/>
+
+                        <VideoView
+                            android:visibility="gone"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/vdArm2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"/>
+
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Video from : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:onClick="openYoutube"
+                                android:fontFamily="@font/man_bold"
+                                android:text="SAFESTEPS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnKnee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Description" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="The joint between the thigh and the lower leg in
+humans" />
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Reference : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:tag="https://www.healthywa.wa.gov.au/Articles/F_I/First-aid-for-sprains-and-strains"
+                                android:onClick="getLink"
+                                android:fontFamily="@font/man_bold"
+                                android:text="HealthyWA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Possible Injuries" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text=" Fractured bones" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_reg"
+                            android:text="ACL" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Torn meniscus" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Knee bursitis" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="First aid for knee injuries in the first 48 to 72 hours" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="● Stop your activity immediately. Don’t ‘work through’ the
+pain.
+\n\n● Rest the joint at first.
+\n\n● Reduce pain, swelling and internal bleeding with ice packs,
+applied for 15 minutes every couple of hours.
+\n\n● Bandage the knee firmly and extend the wrapping down the
+lower leg.
+\n\n● Elevate the injured leg.
+\n\n● Don’t apply heat to the joint.
+\n\n● Avoid alcohol, as this encourages bleeding and swelling.
+\n\n● Don’t massage the joint, as this encourages bleeding and
+swelling.
+" />
+
+                        <VideoView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/vdKnee1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"/>
+
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Video from : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:onClick="openYoutube"
+                                android:fontFamily="@font/man_bold"
+                                android:text="SAFESTEPS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnFace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Description" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="The front part of a person's head from the forehead
+to the chin
+" />
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Reference : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:tag="https://www.healthywa.wa.gov.au/Articles/F_I/First-aid-for-sprains-and-strains"
+                                android:onClick="getLink"
+                                android:fontFamily="@font/man_bold"
+                                android:text="HealthyWA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Possible Injuries" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Burn Face" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Administer the following first-aid steps while waiting for
+emergency medical help to arrive" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="● Cool the burn. Hold the area under cool (not cold) running
+water for about 10 minutes. If the burn is on the face,
+apply a cool, wet cloth until the pain eases. For a mouth
+burn from hot food or drink, put a piece of ice in the
+mouth for a few minutes.
+\n\n● Remove rings or other tight items from the burned area. Try
+to do this quickly and gently, before the area swells.
+\n\n● Don't break blisters. Blisters help protect against
+infection. If a blister does break, gently clean the area
+with water and apply an antibiotic ointment.
+\n\n● Apply lotion. After the burn is cooled, apply a lotion,
+such as one with aloe vera or cocoa butter. This helps
+prevent drying and provides relief.
+\n\n● Bandage the burn. Cover the burn with a clean bandage. Wrap
+it loosely to avoid putting pressure on burned skin.
+Bandaging keeps air off the area, reduces pain and protects
+blistered skin.
+\n\n● If needed, take a nonprescription pain reliever, such as
+ibuprofen (Advil, Motrin IB, others), naproxen sodium
+(Aleve) or acetaminophen (Tylenol, others).
+" />
+
+                        <VideoView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/vdFace1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"/>
+
+
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Video from : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:onClick="openYoutube"
+                                android:fontFamily="@font/man_bold"
+                                android:text="SAFESTEPS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/lnChest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Description" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Is the part of your body between your neck and
+your abdomen (belly)
+" />
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Reference : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:tag="https://www.mayoclinic.org/first-aid/first-aid-cpr/basics/art-20056600"
+                                android:onClick="getLink"
+                                android:fontFamily="@font/man_bold"
+                                android:text="Mayo Clinic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Possible Injuries" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Drowned" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Heart Attack" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Shortness of Breath" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Choking" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/man_bold"
+                            android:text="Administer the following first-aid steps while waiting for
+emergency medical help to arrive
+" />
+
+                        <TextView
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="● Open airway by placing one hand on the forehead and the
+other 2 fingers under the chin
+\n\n● Check for breathing for 10 seconds
+\n\n● Clear chest and give 30 compressions with 2 hands, fingers
+and elbows locked, hands clasped
+\n\n● Close nose, open mouth, breathe into casualty’s mouth,
+turn your head and breathe again
+\n\n● Repeat until help arrives" />
+
+                        <VideoView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/vdChest1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"/>
+
+                        <VideoView
+                            android:visibility="gone"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/white"
+                            android:id="@+id/vdChest2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"/>
+
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:fontFamily="@font/man_reg"
+                                android:text="Video from : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:onClick="openYoutube"
+                                android:fontFamily="@font/man_bold"
+                                android:text="SAFESTEPS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".DriverDetails">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/big_ambulance"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:textColor="#E91E63"
+                android:layout_marginBottom="15dp"
+                android:textSize="18dp"
+                android:fontFamily="@font/man_bold"
+                android:gravity="center"
+                android:text="Assistance Detected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDriver"
+                android:fontFamily="@font/man_semi"
+                android:gravity="center"
+                android:text="Driver: Mark Men Doe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvHospital"
+                android:fontFamily="@font/man_semi"
+                android:gravity="center"
+                android:text="Hospital: St Lukes Medical Center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:fontFamily="@font/man_semi"
+                android:gravity="center"
+                android:text="Address: Makiling Calamba Laguna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvMobileNumber"
+                android:fontFamily="@font/man_semi"
+                android:gravity="center"
+                android:text="Mobile Number : 09085784687"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/man_semi"
+                android:gravity="center"
+                android:text="Disclaimer: The medical team is on its way, do not close the app or repeat the process or it may lose the connection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/lnMapping"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/layout_bg"
+                android:backgroundTint="#191645"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/man_semi"
+                    android:gravity="center"
+                    android:text="Proceed to Mapping"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

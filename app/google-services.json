@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "935543462875",
+    "firebase_url": "https://arwithmapping-default-rtdb.firebaseio.com",
+    "project_id": "arwithmapping",
+    "storage_bucket": "arwithmapping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935543462875:android:8a0c952a9d2f635ba0e5fe",
+        "android_client_info": {
+          "package_name": "com.pegp.arwithmapping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935543462875-889ct03p2pp8drr4fn2uif8jqesqahja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkwBU1JRyGOcQF6QLSnhkPfPpegyqiPR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935543462875-889ct03p2pp8drr4fn2uif8jqesqahja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

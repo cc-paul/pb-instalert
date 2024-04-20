@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Instalert</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoicGFnZW50ZSIsImEiOiJjbDc2eW52NTIwcDBlM3hrYWh0MWx2dnM2In0.k5b0sazc7NwabRj1SLiNAA</string>
+    <string name="pin"><u>Pin your Hospital Location</u></string>
+</resources>
